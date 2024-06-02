@@ -14,3 +14,9 @@ services:
       - .env
     environment:
       DATA_DIR: /data
+    networks:
+      - gnosis-docker_default
+
+networks:
+  gnosis-docker_default:
+    external: true
